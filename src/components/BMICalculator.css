@@ -1,0 +1,89 @@
+/* BMICalculator.css */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #6a5ae0;
+}
+
+.content-div {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  border: 2px solid #6a5ae0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+input:hover {
+  background: #d5e1e4; /* Change background color on hover */
+  border-color: #2980b9; /* Change border color on hover */
+}
+input:focus {
+  border-color: #3498db; /* Change border color on focus */
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Add margin to create a gap between button tags */
+
+  border: 2px solid #6a5ae0;
+  border-radius: 42px;
+  font-size: 10px;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.25s ease-out, box-shadow 0.25s ease;
+}
+button:hover {
+  background: #6a5ae0; /* Change background color on hover */
+  border-color: #6a5ae0; /* Change border color on hover */
+}
+
+button:disabled {
+  border: 2px solid #6a5ae0;
+  border-radius: 4px;
+  cursor: not-allowed;
+  background-color: gray;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 600px) {
+  input {
+    width: 100%; /* Make the input elements full width on smaller screens */
+    margin-right: 0; /* Remove the right margin on smaller screens */
+  }
+}
